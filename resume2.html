@@ -14,6 +14,27 @@
         .sep{
             height:30px
         }
+        .timeline{
+            position: relative;
+        }
+        .timeline:before{
+            content: ' ';
+            border-left:3px solid grey;
+            height:100%;
+            display:inline-block;
+            position: absolute;
+            left:5px;
+        }
+        .timeline .dot:before{
+            content: ' ';
+            background: yellow;
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            left: 2px;
+            width: 10px;
+            height: 10px;
+        }
     </style>
 </head>
 <body>
@@ -102,8 +123,20 @@
         <div class="col-sm-8">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-4">school</div>
-                    <div class="col-sm-8">detail</div>
+                    <div class="col-sm-4 timeline">
+                            <div class="dot">year</div>
+                            <div>school</div>
+                            <div>location</div>
+                    </div>
+                    <div class="col-sm-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id elit dapibus, eleifend urna vitae, interdum est. Cras sapien urna, mollis dapibus tincidunt eget, dapibus in sem. Ut mattis ut magna quis feugiat. Pellentesque vehicula nibh ut elit sagittis mollis.</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 timeline">
+                        <div class="dot">year</div>
+                        <div>school</div>
+                        <div>location</div>
+                    </div>
+                    <div class="col-sm-8">Suspendisse non faucibus erat. Sed sagittis velit id quam tincidunt, a venenatis velit cursus. Donec vel bibendum felis. Quisque vel accumsan nisi. Cras dignissim maximus vestibulum. Vivamus nisl diam, porttitor.</div>
                 </div>
             </div>
         </div>
