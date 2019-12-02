@@ -85,6 +85,8 @@
         .avatar{
             width:70%;
             border-radius: 50%;
+            position: absolute;
+            top:30px;
         }
         .progress{
             margin-bottom: 20%;
@@ -122,14 +124,20 @@
             top : -0.1rem;
         }
         body{
-            background: #2b2c2c;
+            background-image: linear-gradient(to right,#232526, #414345);
+        }
+        .box{
+            width: 100%;
+            height:100%;
+            border: 1px solid #404242;
+            padding:15px;
         }
     </style>
 </head>
 <body>
 <div class="space"></div>
 <div class="container">
-    <div class="row">
+    <div class="row box">
         <div class="col-sm-4" ><img class="avatar" src="images/avatar.jpg"> </div>
         <div class="col-sm-8">
             <div class="container-fluid">
@@ -166,10 +174,10 @@
             </div>
         </div>
     </div>
-    <div class="space"></div>
-    <div class="row">
+    <div class="sep"></div>
+    <div class="row box">
         <div class="col-sm-4">
-            <div class="header font-bold">INTRO</div>
+            <div class="font-bold header">INTRO</div>
         </div>
         <div class="col-sm-8">
             <div class="container">
@@ -182,7 +190,7 @@
         </div>
     </div>
     <div class="sep"></div>
-    <div class="row">
+    <div class="row box">
         <div class="col-sm-4 font-bold header">EXPERTISE</div>
         <div class="col-sm-8">
             <div class="container-fluid">
@@ -215,7 +223,7 @@
         </div>
     </div>
     <div class="sep"></div>
-    <div class="row">
+    <div class="row box">
         <div class="col-sm-4 header font-bold">SKILLS</div>
         <div class="col-sm-8">
             <div class="container-fluid">
@@ -271,7 +279,7 @@
         </div>
     </div>
     <div class="sep"></div>
-    <div class="row">
+    <div class="row box">
         <div class="col-sm-4 font-bold header">EDUCATION</div>
         <div class="col-sm-8">
             <div class="container-fluid">
