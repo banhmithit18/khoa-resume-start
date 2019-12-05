@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <script src="https://kit.fontawesome.com/61bd06e190.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <style>
         .line{
             border: 1px solid grey
@@ -130,22 +129,31 @@
             border: 1px solid #404242;
             padding:15px;
         }
+        .effect{
+        display:none;
+        }
+        .item1{
+            min-width:320px;
+        }
+        .item4{
+            min-width: 220px;
+        }
     </style>
 </head>
 <body>
 <div class="space"></div>
 <div class="container">
     <div class="row box">
-        <div class="col-sm-4" ><img class="avatar" src="images/avatar.jpg"> </div>
+        <div class="col-sm-4" ><img class="avatar effect" src="images/avatar.jpg"> </div>
         <div class="col-sm-8">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-12 name font-bold">Hà Đăng Khoa</div>
+                    <div class="col-sm-12 name font-bold effect" >Hà Đăng Khoa</div>
                 </div>
                  <div class="row">
-                     <div class="col-sm-6 font job">Full-Stack Web Developer</div>
+                     <div class="col-sm-6 font job effect item1">Full-Stack Web Developer</div>
                      <div class="col-sm-6">
-                         <div class="social">
+                         <div class="social effect item2">
                             <a href="https://www.facebook.com/shrimp3012" target="_blank"><i class="fab fa-facebook-f "></i></a>
                             <a href="https://www.linkedin.com/in/khoadangha" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             <a href="https://github.com/banhmithit18" target="_blank"><i class="fab fa-github"></i></a>
@@ -153,18 +161,18 @@
                      </div>
                  </div>
                 <div class="sep"></div>
-                <div class="line"></div>
+                <div class="line effect item3"></div>
                 <div class="sep"></div>
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 effect item4">
                         <div class="font-bold">Location</div>
                         <div class="font">Ho Chi Minh city, VietNam</div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 effect item5">
                         <div class="font-bold">Phone</div>
                         <div class="font">+840336432391</div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 effect item6">
                         <div class="font-bold">Email</div>
                         <div class="font">khoadh28@gmail.com</div>
                     </div>
@@ -302,27 +310,44 @@
     </div>
 </div>
 <div class="space"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src ="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 <script>
     $(document).ready(function () {
         $(".val-1").html($(".bar-1").attr("aria-valuenow") + "<small>%</small>")
-    })
-    $(document).ready(function () {
         $(".val-2").html($(".bar-2").attr("aria-valuenow") + "<small>%</small>")
-    })
-    $(document).ready(function () {
         $(".val-3").html($(".bar-3").attr("aria-valuenow") + "<small>%</small>")
-    })
-    $(document).ready(function () {
         $(".val-4").html($(".bar-4").attr("aria-valuenow") + "<small>%</small>")
-    })
-    $(document).ready(function () {
         $(".val-5").html($(".bar-5").attr("aria-valuenow") + "<small>%</small>")
-    })
-    $(document).ready(function () {
         $(".val-6").html($(".bar-6").attr("aria-valuenow") + "<small>%</small>")
+        $(".avatar").show("drop",{direction:"up"},1000)
+        setTimeout(function () {
+            $(".name").show("drop",{direction: "up"},1000)
+        },200)
+        setTimeout(function () {
+            $(".item1").show("drop",{direction: "up"},1000)
+        },400)
+        setTimeout(function () {
+            $(".item2").show("drop",{direction: "up"},1000)
+        },600)
+        setTimeout(function () {
+            $(".item3").show("drop",{direction: "up"},1000)
+        },800)
+        setTimeout(function () {
+            $(".item4").show("drop",{direction: "up"},1000)
+        },1000)
+        setTimeout(function () {
+            $(".item5").show("drop",{direction: "up"},1000)
+        },1200)
+        setTimeout(function () {
+            $(".item6").show("drop",{direction: "up"},1000)
+        },1400)
+
     })
+
 </script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
