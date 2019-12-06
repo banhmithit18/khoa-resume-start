@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.2/css/all.css">
+    <style>
+        .line{
+            border: 1px solid grey
+        }
+        .sep{
+            height:60px
+        }
+        .timeline{
+            position: relative;
+        }
+        .timeline:before{
+            content: ' ';
+            border-left:3px solid grey;
+            height:100%;
+            display:inline-block;
+            position: absolute;
+            left:5px;
+        }
+        .timeline .dot:before{
+            content: ' ';
+            background: rgb(225,193,7);
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            left: 2px;
+            width: 10px;
+            height: 10px;
+            box-shadow: 0 0 0 4px #2d2e2e;
+        }
+        .font{
+            font-family: 'Lato', sans-serif;
+            color:rgb(151,152,153);
+        }
+        .name{
+            font-size: 50pt;
+        }
+        .font-bold{
+            font-family: 'Helvetica', sans-serif;
+            font-weight: 700;
+            color: rgb(161,162,163);
+        }
+        .job{
+            font-size:18pt;
+            font-weight:300px
+        }
+        .fab{
+            width: 33px;
+            height: 33px;
+            text-align: center;
+            line-height: 1.7 !important;
+            margin-left: 3px;
+            background-color: rgb(113, 114, 115);
+            color: #979899;
+            border-radius: 7%;
+        }
+        .fa-border{
+            border-color: rgb(113, 114, 115);
+        }
+        .fab:hover{
+            background-color: rgb(63,64,64);
+            color: rgb(225,193,7);
+        }
+        .line{
+            border-bottom: 1px solid rgb(64,66,66);
+            background-color: rgb(64,66,66);
+        }
+        .space{
+            height:150px;
+        }
+        .detail{
+            font-size: 20px;
+        }
+        .social{
+            float:right;
+        }
+        .header{
+            text-align: center;
+        }
+        .avatar{
+            width:70%;
+            border-radius: 50%;
+        }
+        .progress{
+            margin-bottom: 20%;
+            height:7px;
+            width: 316px;
+            border-radius: 0%;
+            background:#404242;
+        }
+        .progress-value{
+            color: rgb(225,193,7);
+            font-family: "Lato",sans-serif;
+            font-weight: 600;
+            font-size: 16.8px;
+        }
+        .progress-value,.skills-name{
+            display: inline-block;
+        }
+        .skills-name{
+            padding-left: 8px;
+            font-size: 19px;
+        }
+        .timeline-time{
+            font-size: 10px;
+            color:rgb(151,152,153)
+        }
+        .timeline a{
+            text-decoration: none;
+        }
+        .timeline a:hover{
+            color: rgb(225,193,7);
+        }
+        .ord{
+            position: absolute;
+            left: -5%;
+            top : -0.1rem;
+        }
+        body{
+            background-image: linear-gradient(to right,#232526, #414345);
+        }
+        .box{
+            width: 100%;
+            height:100%;
+            border: 1px solid #404242;
+            padding:15px;
+        }
+        .effect{
+        display:none;
+        }
+        .item1{
+            min-width:320px;
+        }
+        .item4{
+            min-width: 220px;
+        }
+    </style>
+</head>
+<body>
+<div class="space"></div>
+<div class="container">
+    <div class="row box">
+        <div class="col-sm-4" ><img class="avatar effect" src="images/avatar.jpg"> </div>
+        <div class="col-sm-8">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 name font-bold effect" >Hà Đăng Khoa</div>
+                </div>
+                 <div class="row">
+                     <div class="col-sm-6 font job effect item1">Full-Stack Web Developer</div>
+                     <div class="col-sm-6">
+                         <div class="social effect item2">
+                            <a href="https://www.facebook.com/shrimp3012" target="_blank"><i class="fab fa-facebook-f fa-border"></i></a>
+                            <a href="https://www.linkedin.com/in/khoadangha" target="_blank"><i class="fab fa-linkedin-in fa-border"></i></a>
+                            <a href="https://github.com/banhmithit18" target="_blank"><i class="fab fa-github fa-border"></i></a>
+                         </div>
+                     </div>
+                 </div>
+                <div class="sep"></div>
+                <div class="line effect item3"></div>
+                <div class="sep"></div>
+                <div class="row">
+                    <div class="col-sm-4 effect item4">
+                        <div class="font-bold">Location</div>
+                        <div class="font">Ho Chi Minh city, VietNam</div>
+                    </div>
+                    <div class="col-sm-4 effect item5">
+                        <div class="font-bold">Phone</div>
+                        <div class="font">+840336432391</div>
+                    </div>
+                    <div class="col-sm-4 effect item6">
+                        <div class="font-bold">Email</div>
+                        <div class="font">khoadh28@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sep"></div>
+    <div class="row box">
+        <div class="col-sm-4">
+            <div class="font-bold header">INTRO</div>
+        </div>
+        <div class="col-sm-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="font intro">Nam commodo quam quis bibendum feugiat. Donec sollicitudin, ante at suscipit ultricies, orci neque auctor ante, a accumsan risus sem eu est. Cras ac lobortis tortor, eget volutpat ligula. Sed interdum lectus vitae arcu interdum tristique. Donec finibus ipsum vel nisl rhoncus fermentum. Mauris ultrices euismod volutpat. Donec ac nisl in orci suscipit molestie.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sep"></div>
+    <div class="row box">
+        <div class="col-sm-4 font-bold header">EXPERTISE</div>
+        <div class="col-sm-8">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="ord progress-value">01</div>
+                        <div class="font-bold">FRONT-END DESIGN</div>
+                        <div class="font">Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam blandit erat non ornare condimentum. In sit amet nunc.</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="ord progress-value">02</div>
+                        <div class="font-bold">PERNOCTATION</div>
+                        <div class="font">Curabitur bibendum scelerisque feugiat. Nam et ultrices erat. Nunc pretium, enim pharetra convallis mattis, ipsum velit congue ante, eget semper.</div>
+                    </div>
+                </div>
+                <div style="height:30px"></div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="ord progress-value">03</div>
+                        <div class="font-bold">GOOGLE</div>
+                        <div class="font">Aenean rhoncus, ligula aliquet malesuada sodales, nulla nulla blandit lectus, id vulputate tellus massa nec lectus. Quisque et erat sollicitudin.</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="ord progress-value">04</div>
+                        <div class="font-bold">COPY-PASTE</div>
+                        <div class="font">Vivamus mollis libero eros, sit amet placerat lacus hendrerit at. Morbi egestas, tellus at tempor elementum, mi nulla porttitor nisi.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sep"></div>
+    <div class="row box">
+        <div class="col-sm-4 header font-bold">SKILLS</div>
+        <div class="col-sm-8">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="progress-value val-1"></div>
+                        <div class="font-bold skills-name">CSS</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning bar-1" role="progressbar" style="width: 25%" aria-valuenow="25"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="progress-value val-2"></div>
+                        <div class="font-bold skills-name">PHOTOSHOP</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning bar-2" role="progressbar" style="width: 25%" aria-valuenow="25"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="progress-value val-3"></div>
+                        <div class="font-bold skills-name">C</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning bar-3" role="progressbar" style="width: 25%" aria-valuenow="25"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="progress-value val-4"></div>
+                        <div class="font-bold skills-name">JAVASCRIPT</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning bar-4" role="progressbar" style="width: 25%" aria-valuenow="25"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="progress-value val-5"></div>
+                        <div class="font-bold skills-name">GIT</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning bar-5" role="progressbar" style="width: 25%" aria-valuenow="25"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="progress-value val-6"></div>
+                        <div class="font-bold skills-name">ENGLISH</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning bar-6" role="progressbar" style="width: 25%" aria-valuenow="25"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sep"></div>
+    <div class="row box">
+        <div class="col-sm-4 font-bold header">EDUCATION</div>
+        <div class="col-sm-8">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-5 timeline">
+                            <div class="dot font timeline-time"> 2019 - Now</div>
+                            <div><a class="font-bold" href="https://aptechvietnam.com.vn" target="_blank">Aptech Computer Education</a></div>
+                            <div class="font timeline-time">Ho Chi Minh, Viet Nam</div>
+                    </div>
+                    <div class="col-sm-7 font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id elit dapibus, eleifend urna vitae, interdum est. Cras sapien urna, mollis dapibus tincidunt eget, dapibus in sem. Ut mattis ut magna quis feugiat. Pellentesque vehicula nibh ut elit sagittis mollis.<div class="sep"></div></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 timeline">
+                        <div class="dot font timeline-time"> 2016 - 2019</div>
+                        <div><a class="font-bold" href="http://c3hongduc.daklak.edu.vn" target="_blank">Hồng Đức High School</a></div>
+                        <div class="font timeline-time">Dak Lak, Viet Nam</div>
+                    </div>
+                    <div class="col-sm-7 font">Suspendisse non faucibus erat. Sed sagittis velit id quam tincidunt, a venenatis velit cursus. Donec vel bibendum felis. Quisque vel accumsan nisi. Cras dignissim maximus vestibulum. Vivamus nisl diam, porttitor.                            <div class="sep"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="space"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src ="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".val-1").html($(".bar-1").attr("aria-valuenow") + "<small>%</small>")
+        $(".val-2").html($(".bar-2").attr("aria-valuenow") + "<small>%</small>")
+        $(".val-3").html($(".bar-3").attr("aria-valuenow") + "<small>%</small>")
+        $(".val-4").html($(".bar-4").attr("aria-valuenow") + "<small>%</small>")
+        $(".val-5").html($(".bar-5").attr("aria-valuenow") + "<small>%</small>")
+        $(".val-6").html($(".bar-6").attr("aria-valuenow") + "<small>%</small>")
+        $(".avatar").show("drop",{direction:"left"},1000)
+        setTimeout(function () {
+            $(".name").show("drop",{direction: "left"},1000)
+        },200)
+        setTimeout(function () {
+            $(".item1").show("drop",{direction: "left"},1000)
+        },400)
+        setTimeout(function () {
+            $(".item2").show("drop",{direction: "left"},1000)
+        },600)
+        setTimeout(function () {
+            $(".item3").show("drop",{direction: "left"},1000)
+        },800)
+        setTimeout(function () {
+            $(".item4").show("drop",{direction: "left"},1000)
+        },1000)
+        setTimeout(function () {
+            $(".item5").show("drop",{direction: "left"},1000)
+        },1200)
+        setTimeout(function () {
+            $(".item6").show("drop",{direction: "left"},1000)
+        },1400)
+
+    })
+
+</script>
+</body>
+</html>
